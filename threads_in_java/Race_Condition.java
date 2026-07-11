@@ -1,5 +1,8 @@
 package threads_in_java;
 
+
+// Race Condition Definition :- A race condition occurs when two or more threads can access shared data and they try to change it at the same time, leading to unpredictable results.  (or) Multiple threads modify shared data at the same time, leading to incorrect results.
+
 class display
 {
     int count;
