@@ -199,5 +199,3 @@ public class Collection_List_ArrayList
 
 //Note :- Here, ArrayList And Vector are Good for storing and retrieving the data.
 
-
-
