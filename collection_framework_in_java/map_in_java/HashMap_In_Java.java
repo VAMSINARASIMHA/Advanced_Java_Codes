@@ -4,6 +4,7 @@ package collection_framework_in_java.map_in_java;
 //HashMap will not follow the both ""Insertion Order"" and ""Sorted Order"". and The order of keys and values are unpredictable in this HashMap.
 //HashMap will allows null keys and null values, and also it allows duplicate values but it will not allows duplicate keys.
 //the default and initial capacity of HashMap is "16" later it increases like(16,32,64,128....).
+//HashMap is not synchronized.
 
 import java.util.HashMap;
 import java.util.Map;
@@ -79,3 +80,13 @@ public class HashMap_In_Java {
 
     }
 }
+
+// Note:-
+
+// 1)"LinkedHashMap" maintains ----> insertion order, and not synchronized.
+
+// 2)"TreeMap" Stores keys in ----> sorted order, and not synchronized.and it
+// Does not allow null keys but it allows null values.
+
+// 3)"Hashtable" was synchronized. and it Does not allow null keys or values.
+// and "code output"----> The order is not guaranteed (same as HashMap).
