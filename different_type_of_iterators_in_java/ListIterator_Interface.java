@@ -15,7 +15,6 @@ public class ListIterator_Interface {
         obj.add("Python");
         obj.add("Spring Boot");
         obj.add("C++");
-
         // ListIterator<String> itr = list.listIterator(2);
         // Starts iteration from index 2.
         ListIterator<String> itr = obj.listIterator();
