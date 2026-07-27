@@ -1,5 +1,6 @@
 //Defination of a Queue :- A Queue is an interface in the Java Collection Framework. And it will follows the FIFO(First In,First Out) order Principle.
-
+// Defination of a PriorityQueue :- A PriorityQueue is a class in the Java Collections Framework that implements the Queue interface and stores elements according to their priority rather than their insertion order. Internally, it maintains a heap (not a fully sorted order). However, elements are removed in priority order using poll() , and by default, the smallest element has the highest priority.
+// It stores elements according to their priority using a binary heap, and poll() retrieves them in priority order. and it not allow "null" values.
 package collection_framework_in_java.queue_in_java;
 
 import java.util.PriorityQueue;
@@ -56,6 +57,13 @@ public class Priority_Queue {
 // pq.capacity(); // (❌) Doesn't exist.
 
 // 2)Here add() and offer() are works like similarly.
+/*
+ * Both add() and offer() insert elements into the queue.
+ * 
+ * Difference:
+ * add() throws an exception if the element cannot be inserted.
+ * offer() returns false instead of throwing an exception.
+ */
 
 // 3)Difference Between poll() and remove() :-
 // if we not adding any element then poll() will returns as "null"
@@ -64,3 +72,5 @@ public class Priority_Queue {
 // 4)remember that iterating or printing a PriorityQueue does not guarantee
 // sorted order because internally it uses a heap. Only poll() and peek() always
 // give the highest-priority element (Head).
+
+// 5) PriorityQueue is not synchronized.It is not thread-safe.
