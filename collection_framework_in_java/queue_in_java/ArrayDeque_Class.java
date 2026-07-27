@@ -53,3 +53,6 @@ public class ArrayDeque_Class {
  * 
  * 4)getFirst(), getLast().
  */
+
+// Note :- LinkedList is also do same operations as ArrayDeque.
+// "Deque<String> pq = new LinkedList<>();".
