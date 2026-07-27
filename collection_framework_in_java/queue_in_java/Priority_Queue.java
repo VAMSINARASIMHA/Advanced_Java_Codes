@@ -74,3 +74,15 @@ public class Priority_Queue {
 // give the highest-priority element (Head).
 
 // 5) PriorityQueue is not synchronized.It is not thread-safe.
+
+/*
+ * 
+ * //Note :-
+ * 
+ * PriorityQueue :- Unlike FIFO, elements are processed according to priority.
+ * 
+ * By default : Smallest element has the highest priority (natural ordering).
+ */
+
+// Note :- Remaining order when printed is not guaranteed to be sorted because
+// PriorityQueue is implemented as a heap.
