@@ -152,3 +152,56 @@ public class Comparator_Example2 {
 
 // }
 // }
+
+/*
+ * // Example code :- 4
+ * 
+ * // Another Comparator Example.
+ * 
+ * import java.util.ArrayList;
+ * import java.util.Collections;
+ * import java.util.Comparator;
+ * import java.util.List;
+ * 
+ * class Student {
+ * String name;
+ * int id;
+ * 
+ * public Student(String name, int id) {
+ * this.name = name;
+ * this.id = id;
+ * }
+ * 
+ * public String toString() {
+ * return "Student [name=" + name + ", Id=" + id + "]";
+ * }
+ * 
+ * }
+ * 
+ * public class vvv {
+ * public static void main(String[] args) {
+ * 
+ * List<Student> obj = new ArrayList<>();
+ * obj.add(new Student("Vamsi", 31));
+ * obj.add(new Student("Ram", 22));
+ * obj.add(new Student("Ramesh", 15));
+ * obj.add(new Student("Suresh", 50));
+ * obj.add(new Student("Raju", 13));
+ * obj.add(new Student("Sai", 49));
+ * 
+ * class Student_Data implements Comparator<Student> {
+ * public int compare(Student s1, Student s2) {
+ * return s1.id - s2.id;
+ * }
+ * }
+ * 
+ * Collections.sort(obj, new Student_Data());
+ * 
+ * for (Student stu : obj) {
+ * System.out.println(stu);
+ * }
+ * 
+ * }
+ * }
+ * 
+ */
