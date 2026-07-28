@@ -38,18 +38,24 @@ public class Comparator_Example2 {
         Comparator<Student> num = new Comparator<Student>() {
             public int compare(Student n1, Student n2) {
 
-                if (n1.id > n2.id) {
-                    return 1;
-                }
+                // if (n1.id > n2.id) {
+                // return 1;
+                // } else if (n1.id < n2.id) {
+                // return -1;
+                // } else {
+                // return 0;
+                // }
 
-                else {
-                    return -1;
-                }
+                // (or)
+
+                return Integer.compare(n1.id, n2.id);
+                // it is safer and avoids integer overflow.
 
             }
         };
 
         Collections.sort(obj, num);
+        // Collections.sort(obj, num.reversed());
 
         for (Student stu : obj) {
             System.out.println(stu);
