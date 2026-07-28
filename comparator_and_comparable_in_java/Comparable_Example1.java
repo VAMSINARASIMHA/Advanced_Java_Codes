@@ -35,8 +35,11 @@ class Student implements Comparable<Student> {
 
         // (or)
 
-        return this.id - vari.id; // It will sort through "id".
+        // return this.id - vari.id; // It will sort through "id".
         // return this.name.compareTo(vari.name); // It will sort through "name".
+
+        return Integer.compare(this.id, vari.id);
+        // It is safer and avoids integer overflow.
 
         // Note :- 1) Students are sorted in ascending order of id, which is the natural
         // ordering defined in compareTo().
