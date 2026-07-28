@@ -1,3 +1,5 @@
+//Example code :- 1
+
 package comparator_and_comparable_in_java;
 
 //Sorting according to the id.
@@ -56,6 +58,8 @@ public class Comparator_Example2 {
     }
 }
 
+// Example code :- 2
+
 // Sorting according to the name.
 
 // import java.util.ArrayList;
@@ -95,6 +99,51 @@ public class Comparator_Example2 {
 // }
 // };
 
+// Collections.sort(obj, num);
+
+// for (Student stu : obj) {
+// System.out.println(stu);
+// }
+
+// }
+// }
+
+// Example code :- 3
+
+// Sorting according to the id Using "Lambda Expression" and "ternary Operator".
+
+// import java.util.ArrayList;
+// import java.util.Collections;
+// import java.util.Comparator;
+// import java.util.List;
+
+// class Student {
+// String name;
+// int id;
+
+// public Student(String name, int id) {
+// this.name = name;
+// this.id = id;
+// }
+
+// public String toString() {
+// return "Student [name=" + name + ", Id=" + id + "]";
+// }
+
+// }
+
+// public class Comparator_Example2 {
+// public static void main(String[] args) {
+
+// List<Student> obj = new ArrayList<>();
+// obj.add(new Student("Vamsi", 31));
+// obj.add(new Student("Ram", 22));
+// obj.add(new Student("Ramesh", 15));
+// obj.add(new Student("Suresh", 50));
+// obj.add(new Student("Raju", 13));
+// obj.add(new Student("Sai", 49));
+
+// Comparator<Student> num = (n1, n2) -> n1.id > n2.id ? 1 : -1;
 // Collections.sort(obj, num);
 
 // for (Student stu : obj) {
