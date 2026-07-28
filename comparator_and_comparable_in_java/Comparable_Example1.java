@@ -41,7 +41,6 @@ class Student implements Comparable<Student> {
         // Note :- 1) Students are sorted in ascending order of id, which is the natural
         // ordering defined in compareTo().
     }
-
 }
 
 public class Comparable_Example1 {
