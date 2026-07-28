@@ -1,3 +1,4 @@
+//Defination :- Comparator is an interface in the java.util package that is used to define a custom sorting order for objects.
 package comparator_and_comparable_in_java;
 
 import java.util.ArrayList;
