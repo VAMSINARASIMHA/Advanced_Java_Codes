@@ -1,5 +1,4 @@
 /*
-
 The Arrays Utility Class in Java is a final utility class present in the java.util package. It contains many static methods for performing common operations on arrays such as:
 
 Sorting
@@ -21,11 +20,9 @@ public class Arrays_Utility_Class {
     public static void main(String[] args) {
         // 1. Arrays.toString() :- Converts an array into a readable String.
         int[] numbers = { 10, 20, 30, 40 };
-
         System.out.println(Arrays.toString(numbers));
     }
 }
-
 /*
  * 
  * 2. Arrays.sort() :- Sorts an array in ascending order.
