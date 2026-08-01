@@ -30,8 +30,6 @@ public class WildCard_In_Generics {
                                                 // and also here it doesn't shows any error ---> for this 'ram'.
                                                 // here we can use both 'ram' and "?".
         li1 = li3;
-
         System.out.println("This code is about Understanding the WildCard Concept as a Theoretically in java");
-
     }
 }
