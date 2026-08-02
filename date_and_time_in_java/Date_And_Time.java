@@ -1,5 +1,4 @@
 package date_and_time_in_java;
-
 // Defination :- The old API (java.util.Date and java.util.Calendar) was Deprecated in java. and The new "java.time" package was introduced in "Java8",and this """(new "java.time" package)""" was introduced to replace the old Date and Calendar classes. 
 
 /*
