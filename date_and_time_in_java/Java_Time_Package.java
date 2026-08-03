@@ -52,5 +52,8 @@ public class Java_Time_Package {
         System.out.println(obj2.plusYears(6));
         System.out.println(obj2.minusDays(6));
 
+        System.out.println(obj.getDayOfWeek());
+        System.out.println(obj.getMonth());
+
     }
 }
