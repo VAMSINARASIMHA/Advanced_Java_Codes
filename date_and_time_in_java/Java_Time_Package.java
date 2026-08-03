@@ -55,5 +55,25 @@ public class Java_Time_Package {
         System.out.println(obj.getDayOfWeek());
         System.out.println(obj.getMonth());
 
+        /*
+         * 
+         * 
+         * import java.time.DayOfWeek;
+         * import java.time.LocalDate;
+         * 
+         * public class vvv {
+         * public static void main(String[] args) {
+         * 
+         * LocalDate date = LocalDate.of(2026, 8, 10);
+         * 
+         * DayOfWeek day = date.getDayOfWeek();
+         * 
+         * System.out.println("Date : " + date);
+         * System.out.println("Day : " + day);
+         * }
+         * }
+         * 
+         */
+
     }
 }
