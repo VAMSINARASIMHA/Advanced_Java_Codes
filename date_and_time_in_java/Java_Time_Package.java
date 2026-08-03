@@ -75,5 +75,27 @@ public class Java_Time_Package {
          * 
          */
 
+        /*
+         * 
+         * package date_and_time_in_java;
+         * 
+         * import java.time.LocalDate;
+         * import java.time.Month;
+         * 
+         * public class Month_Methods {
+         * public static void main(String[] args) {
+         * 
+         * LocalDate today = LocalDate.now();
+         * 
+         * Month month = today.getMonth();
+         * 
+         * System.out.println(month); // AUGUST
+         * System.out.println(month.getValue()); // 8
+         * System.out.println(month.length(false)); // 31
+         * }
+         * }
+         * 
+         */
+
     }
 }
