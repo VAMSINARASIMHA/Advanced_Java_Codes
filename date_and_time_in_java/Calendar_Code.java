@@ -6,13 +6,9 @@ import java.time.Month;
 
 public class Calendar_Code {
     public static void main(String[] args) {
-
         int year = 2026;
-
         System.out.println("\n\t\t\t" + year + " CALENDAR\n");
-
         for (Month month : Month.values()) {
-
             LocalDate firstDay = LocalDate.of(year, month, 1);
 
             System.out.println("========================================");
