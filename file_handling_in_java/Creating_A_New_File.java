@@ -26,9 +26,7 @@ public class Creating_A_New_File {
 /*
  * 
  * // Creating a Folder.
- * 
  * import java.io.File;
- * 
  * public class vvv {
  * public static void main(String[] args) {
  * 
