@@ -48,3 +48,42 @@ public class File_Writer {
  */
 
 // Note :- Here we can use try-with-resources for this file handling.
+
+/*
+ * 
+ * 
+ * import java.io.File;
+ * import java.io.FileWriter;
+ * import java.io.IOException;
+ * 
+ * //FileWriter is used to write character/text data.
+ * 
+ * public class vvv {
+ * public static void main(String[] args) {
+ * String st =
+ * "C:\\Users\\vamsi\\OneDrive\\Documents\\Advanced_Java_Codes\\f3.txt";
+ * FileWriter obj = null;
+ * 
+ * try {
+ * File ob = new File(st);
+ * obj = new FileWriter(ob);
+ * obj.write("Hai this is my first java Text file using 'FileWriter'.\n");
+ * 
+ * obj.write(65);
+ * 
+ * obj.write("\nOvels\n");
+ * 
+ * char ch[] = { 'a', 'e', 'i', 'o', 'u' };
+ * obj.write(ch);
+ * 
+ * obj.close();
+ * } catch (IOException e) {
+ * System.out.println("Something went wrong");
+ * e.printStackTrace();
+ * }
+ * }
+ * }
+ * 
+ * 
+ * 
+ */
