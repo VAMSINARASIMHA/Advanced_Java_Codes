@@ -61,3 +61,28 @@ public class Creating_A_New_File {
  * }
  * 
  */
+
+/*
+ * // With the total count of the files :-
+ * 
+ * //To check how many Files (or) Folders are present in the given Path.
+ * import java.io.File;
+ * 
+ * public class vvv {
+ * public static void main(String[] args) {
+ * File obj = new File(
+ * "C:\\Users\\vamsi\\OneDrive\\Documents\\Advanced_Java_Codes\\file_handling_in_java"
+ * );
+ * String str[] = obj.list();
+ * int count = 0;
+ * for (String st : str) {
+ * count++;
+ * System.out.println(st);
+ * }
+ * System.out.println("There are only '" + count +
+ * "' files are present in this Path");
+ * }
+ * }
+ * 
+ * 
+ */
