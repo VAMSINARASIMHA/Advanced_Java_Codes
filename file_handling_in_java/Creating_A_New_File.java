@@ -27,7 +27,7 @@ public class Creating_A_New_File {
  * 
  * // Creating a Folder.
  * import java.io.File;
- * public class vvv {
+ * public class Creating_A_New_File {
  * public static void main(String[] args) {
  * 
  * File folder = new File("Notes/Shoyeb"); // "C:/Notes/Shoyeb" creates in 'c'
@@ -37,6 +37,25 @@ public class Creating_A_New_File {
  * System.out.println("Folders created successfully!");
  * } else {
  * System.out.println("Folders already exist.");
+ * }
+ * }
+ * }
+ * 
+ */
+
+/*
+ * 
+ * //To check how many Files (or) Folders are present in the given Path.
+ * 
+ * import java.io.File;
+ * 
+ * public class Creating_A_New_File {
+ * public static void main(String[] args) {
+ * File obj = new
+ * File("C:\\Users\\vamsi\\OneDrive\\Documents\\Advanced_Java_Codes");
+ * String str[] = obj.list();
+ * for (String st : str) {
+ * System.out.println(st);
  * }
  * }
  * }
