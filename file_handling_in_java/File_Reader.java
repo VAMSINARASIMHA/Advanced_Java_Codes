@@ -27,6 +27,7 @@ public class File_Reader {
 
                 System.out.print((char) ch);
             }
+            fr.close();
 
         } catch (Exception e) {
             System.out.println("Something went wrong");
