@@ -62,6 +62,32 @@ public class File_Reader {
  * 
  */
 
+/*
+ * 
+ * import java.io.File;
+ * import java.io.FileReader;
+ * 
+ * public class vvv {
+ * public static void main(String[] args) {
+ * try {
+ * File fr = new File("f1.txt");
+ * FileReader fr1 = new FileReader(fr);
+ * char ch[] = new char[(int) fr.length()];
+ * fr1.read(ch);
+ * for (char c : ch) {
+ * System.out.print(c);
+ * }
+ * fr1.close();
+ * } catch (Exception e) {
+ * System.out.println("Something went wrong");
+ * e.printStackTrace();
+ * }
+ * }
+ * }
+ * 
+ * 
+ */
+
 // Using BufferedReader :-
 // BufferedReader lets you read text line by line with readLine().
 
