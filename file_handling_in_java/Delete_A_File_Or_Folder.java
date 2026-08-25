@@ -33,3 +33,5 @@ public class Delete_A_File_Or_Folder {
  * }
  * 
  */
+
+// Note :- we can't delete a folder when there is any files are present in it.
