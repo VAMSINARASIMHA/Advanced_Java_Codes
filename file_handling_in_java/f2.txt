@@ -1,0 +1,7 @@
+FileWriter using BufferedWriter in java
+
+vamsi 
+
+Ascii value of '65' is : A
+
+this is a new line code
