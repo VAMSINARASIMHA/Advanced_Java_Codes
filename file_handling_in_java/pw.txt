@@ -1,0 +1,11 @@
+A Message.
+100
+1.56
+true
+Z
+65
+
+B
+
+Name : ram
+marks : 99
