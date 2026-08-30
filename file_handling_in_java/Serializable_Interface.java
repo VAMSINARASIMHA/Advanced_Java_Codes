@@ -1,11 +1,12 @@
 // Serialization means converting an object into a byte stream so it can be stored or transmitted.
+// Serialization = "Convert/store a Java object's state as bytes".
 /*
 
 Java Object
      ↓
-Serialization
+Serialization (ObjectOutputStream)
      ↓
-Byte Stream
+Byte Stream (FileOutputStream)
      ↓
 File
 
