@@ -46,9 +46,15 @@ public class Serializable_Interface {
         obj.display();
 
         FileOutputStream fos = new FileOutputStream("example.txt");
-        BufferedOutputStream bos = new BufferedOutputStream(fos);
-        ObjectOutputStream oos = new ObjectOutputStream(bos);
-        oos.writeObject(obj);
+        BufferedOutputStream bos = new BufferedOutputStream(fos); // BufferedOutputStream is good for the better
+                                                                  // performance.
+
+        ObjectOutputStream oos = new ObjectOutputStream(bos); // ObjectOutputStream wraps the file stream to handle the
+                                                              // conversion of Java objects to bytes.
+
+        oos.writeObject(obj); // The writeObject(obj) method converts our Student object into a stream of
+                              // bytes and writes them to the file.
+
         oos.close();
         bos.close();
         fos.close();
