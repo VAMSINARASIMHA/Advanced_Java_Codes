@@ -1,0 +1,56 @@
+// Serialization means converting an object into a byte stream so it can be stored or transmitted.
+/*
+
+Java Object
+     ↓
+Serialization
+     ↓
+Byte Stream
+     ↓
+File
+
+*/
+
+package file_handling_in_java;
+
+import java.io.Serializable;
+import java.io.FileOutputStream;
+import java.io.BufferedOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+class employee implements Serializable {
+    int id;
+    String name;
+
+    public employee(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public String toString() {
+        return "[id=" + id + ", name=" + name + "]";
+    }
+
+    public void display() {
+        System.out.println("Company Id : " + id);
+        System.out.println("Employee Name : " + name);
+
+    }
+
+}
+
+public class Serializable_Interface {
+    public static void main(String[] args) throws IOException {
+        employee obj = new employee(22, "vamsi");
+        obj.display();
+
+        FileOutputStream fos = new FileOutputStream("example.txt");
+        BufferedOutputStream bos = new BufferedOutputStream(fos);
+        ObjectOutputStream oos = new ObjectOutputStream(bos);
+        oos.writeObject(obj);
+        oos.close();
+        bos.close();
+        fos.close();
+    }
+}
