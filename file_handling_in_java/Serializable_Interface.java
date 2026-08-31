@@ -61,3 +61,4 @@ public class Serializable_Interface {
         fos.close();
     }
 }
+// Serializable is a marker interface (it has no methods to implement).
