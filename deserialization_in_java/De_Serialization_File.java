@@ -1,3 +1,15 @@
+// De-Serialization is the reverse processes of Serialization.
+// De-Serialization = converting "Bytes" to the """Java object's""". 
+/*
+File
+ ↓
+De-Serialization (ObjectInputStream)
+ ↓
+Byte Stream (FileInputStream)
+ ↓
+Java Object
+*/
+
 package deserialization_in_java;
 
 import java.io.Serializable;
@@ -28,17 +40,15 @@ class BMW implements Serializable {
 public class De_Serialization_File {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        FileInputStream fos = new FileInputStream("BMW_Car.txt");
-        BufferedInputStream bos = new BufferedInputStream(fos); // BufferedOutputStream is good for the better
-                                                                // performance.
+        FileInputStream fis = new FileInputStream("BMW_Car.txt");
+        BufferedInputStream bis = new BufferedInputStream(fis);
 
-        ObjectInputStream oos = new ObjectInputStream(bos); // ObjectOutputStream wraps the file stream to handle the
-                                                            // conversion of Java objects to bytes.
-        BMW bmw = (BMW) oos.readObject();
+        ObjectInputStream ois = new ObjectInputStream(bis);
+        BMW bmw = (BMW) ois.readObject();
         bmw.Display();
 
-        oos.close();
-        bos.close();
-        fos.close();
+        ois.close();
+        bis.close();
+        fis.close();
     }
 }
