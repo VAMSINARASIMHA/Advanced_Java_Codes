@@ -1,3 +1,6 @@
+// Defination :- InterruptedException is a checked exception that occurs when a thread is waiting, sleeping, or otherwise blocked, and another thread tells it to stop waiting by interrupting it.
+// In Simple Words :- One thread can interrupt another thread while it is sleeping/waiting.
+
 package threads_in_java;
 
 class Worker extends Thread {
